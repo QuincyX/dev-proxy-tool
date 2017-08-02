@@ -1,0 +1,17 @@
+{
+  "name": "dev-proxy-tool",
+  "version": "1.0.0",
+  "description": "本地反向代理",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./index.js",
+    "start": "forever start ./index.js",
+  },
+  "author": "Quincy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "forever": "^0.15.3",
+    "http-proxy": "^1.16.2"
+  }
+}
