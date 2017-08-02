@@ -10,8 +10,7 @@ const http = require('http'),
     app = express()
 
 app.use((req, res) => {
-    console.log(req.headers.host)
-    config.forEach((o)=> {
+    config.forEach(o=> {
         if(req.headers.host == o.host){
             proxy.web(req, res, {
                 target: 'http://' + o.proxy
